@@ -7,17 +7,16 @@ from openai import OpenAI
 from rich.console import Console
 from rich.panel import Panel
 from rich.pretty import Pretty
+from dotenv import load_dotenv
+
+load_dotenv()
 
 # 初始化终端控制台
 console = Console()
 
-## ================= 配置区 =================
-# 1. 原有 API 配置 (用于 DeepSeek / Qwen 等)
-API_KEY_BASE = ""
-BASE_URL_BASE = ""
+API_KEY_BASE = os.getenv("API_KEY_BASE")
+BASE_URL_BASE = os.getenv("BASE_URL_BASE")
 client = OpenAI(api_key=API_KEY_BASE, base_url=BASE_URL_BASE)
-
-
 
 
 MODEL_GLOBAL_PLANNER = ""
