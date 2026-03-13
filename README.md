@@ -45,4 +45,3 @@
 * `main.py`：主程序执行入口。
 * `world_bible.json`：全局状态机文件（程序运行时自动生成并维护）。
 * `rolling_memory.json`：滑动窗口记忆缓存（程序运行时自动生成并维护）。
-* `.env.example`：环境变量配置参考模板。
